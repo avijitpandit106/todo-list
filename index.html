@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h1>To-Do List <img src="/images/list.png" alt="List" /></h1>
+        <div class="input-row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Add a new task..."
+            class="input-box"
+          />
+          <button id="add-btn" class="add-btn">Add</button>
+        </div>
+        <ul class="list-container" id="list-container"></ul>
+      </div>
+      <div class="warning" id="warning">
+        Cannot add an empty task! <span id="close-btn">&times;</span>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
